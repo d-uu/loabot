@@ -259,6 +259,35 @@ function buildDashboardUI(session) {
 client.on('messageCreate', async message => {
   if (message.author.bot) return;
 
+    const prefix = '!';
+    if (!message.content.startsWith(prefix)) return;
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const command = args.shift().toLowerCase();
+
+    // 1️⃣ 아까 드린 '도움말' 명령어 코드를 이 자리에 통째로 넣기
+    if (command === '도움말' || command === 'help') {
+        const helpEmbed = new EmbedBuilder()
+            .setColor('#0099ff')
+            .setTitle('🤖 로아봇(Loabot) 명령어 안내')
+            .setDescription('디스코드 서버에서 사용할 수 있는 전체 명령어 목록과 사용법입니다.')
+            .addFields(
+                { name: '🤖 기본', value: '`!도움말` (또는 `!help`) - 명령어 목록을 보여줍니다.' },
+                { name: '🏃‍♂️ 경주', value: '`!경주 [이름1] [이름2] ...`\n> 재밌는 달리기 경주를 진행합니다.' },
+                { name: '🍽️ 메뉴', value: '`!메뉴`\n> 오늘 식사 메뉴를 무작위로 추천해 줍니다.' },
+                { name: '⚔️ 공대', value: '`!공대 [인원수] [템레벨] [닉네임들...]`\n> 공대 조합을 짜줍니다. (인원수: 4 또는 8)' },
+                { name: '🔍 정보', value: '`!정보 [닉네임]`\n> 로스트아크 캐릭터 정보를 불러옵니다.' },
+                { name: '🎟️ 제비뽑기', value: '`!제비뽑기 [총 개수] [당첨 개수]`\n> 랜덤으로 제비뽑기를 진행합니다.' },
+                { name: '💰 골드', value: '`!골드 [본캐닉네임]`\n> 6캐릭 총 골드를 계산합니다.' }
+            )
+            .setFooter({ text: 'Loabot Powered by Render & Discord.js' })
+            .setTimestamp();
+
+        message.reply({ embeds: [helpEmbed] });
+    }
+
+
+
   // 1. 자동차 경주 기능 (!경주)
   if (message.content.startsWith('!경주')) {
     const args = message.content.split(' ').slice(1);
