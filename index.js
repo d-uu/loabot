@@ -265,7 +265,7 @@ client.on('messageCreate', async message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const command = args.shift().toLowerCase();
 
-  // 📌 도움말 (!도움말 또는 !help) 명령어 (쉼표 수정 완료)
+// 📌 도움말 (!도움말 또는 !help) 명령어
   if (command === '도움말' || command === 'help') {
     const helpEmbed = new EmbedBuilder()
       .setColor('#0099ff')
@@ -279,7 +279,7 @@ client.on('messageCreate', async message => {
         { name: '🔍 정보', value: '`!정보 [닉네임]`\n> 로스트아크 캐릭터 정보를 불러옵니다.' },
         { name: '🎟️ 제비뽑기', value: '`!제비뽑기 [총 개수] [당첨 개수]`\n> 랜덤으로 제비뽑기를 진행합니다.' },
         { name: '💰 골드', value: '`!골드 [본캐닉네임]`\n> 6캐릭 총 골드를 계산합니다.' },
-        { name: '⚔️ 딜컷', value: '`!딜컷 [레이드 이름]`\n> 각 레이드별 딜량을 확인합니다.\n> *예시: `!딜컷 종막`*'
+        { name: '⚔️ 딜컷', value: '`!딜컷 [레이드 이름]`\n> 각 레이드별 딜량을 확인합니다.' }
       )
       .setFooter({ text: 'Loabot Powered by Render & Discord.js' })
       .setTimestamp();
