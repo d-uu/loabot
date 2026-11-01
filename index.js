@@ -75,66 +75,227 @@ const RAID_DATABASE = [
   { id: 'ivory_norm', minLvl: 1600, group: '상아탑', mode: '노말/싱글', gold: 5200, boundRatio: 1 }
 ];
 
-// 💡 레이드별 딜량 컷 데이터 베이스
+// 💡 레이드별 딜량 및 DPS 컷 데이터 베이스
 const RAID_DMG_CUT_DATABASE = {
   '종막': {
     title: '종막 레이드 (익스트림 및 일반)',
     rows: [
-      { category: '종막 익스 노말', gate: '2-1', gangtoo: '2,064억', janhyul: '2,751억', onePerson: '2,293억' },
-      { category: '종막 익스 노말', gate: '2-3까지', gangtoo: '4,118억', janhyul: '5,191억', onePerson: '45,776억' },
-      { category: '종막 익스 하드', gate: '2-1', gangtoo: '5,417억', janhyul: '7,223억', onePerson: '6,019억' },
-      { category: '종막 익스 하드', gate: '2-3까지', gangtoo: '1조 365억', janhyul: '1조 3,821억', onePerson: '1조 1,517억' },
-      { category: '종막 익스 나메', gate: '2-1 (1)', gangtoo: '1조 5,174억', janhyul: '2조 232억', onePerson: '1조 6,860억' },
-      { category: '종막 익스 나메', gate: '2-1 (2)', gangtoo: '2조 8,102억', janhyul: '3조 7,469억', onePerson: '3조 1,224억' },
-      { category: '종막 일반 노말', gate: '1관문', gangtoo: '1,186억', janhyul: '1,581억', onePerson: '1,318억' },
-      { category: '종막 일반 노말', gate: '2관문', gangtoo: '1,074억', janhyul: '1,433억', onePerson: '1,194억' },
-      { category: '종막 일반 하드', gate: '1관문', gangtoo: '2,015억', janhyul: '2,687억', onePerson: '2,239억' },
-      { category: '종막 일반 하드', gate: '2관문', gangtoo: '3,477억', janhyul: '4,637억', onePerson: '3,864억' }
+      { 
+        category: '종막 익스 노말', gate: '2-1', 
+        gangtoo: '2,064억', gangtooDps: '2.06억/초', 
+        janhyul: '2,751억', janhyulDps: '2.75억/초', 
+        onePerson: '2,293억', onePersonDps: '2.29억/초' 
+      },
+      { 
+        category: '종막 익스 노말', gate: '2-3까지', 
+        gangtoo: '4,118억', gangtooDps: '2.13억/초', 
+        janhyul: '5,191억', janhyulDps: '2.84억/초', 
+        onePerson: '45,776억', onePersonDps: '2.37억/초' 
+      },
+      { 
+        category: '종막 익스 하드', gate: '2-1', 
+        gangtoo: '5,417억', gangtooDps: '5.42억/초', 
+        janhyul: '7,223억', janhyulDps: '7.22억/초', 
+        onePerson: '6,019억', onePersonDps: '6.02억/초' 
+      },
+      { 
+        category: '종막 익스 하드', gate: '2-3까지', 
+        gangtoo: '1조 365억', gangtooDps: '5.37억/초', 
+        janhyul: '1조 3,821억', janhyulDps: '7.16억/초', 
+        onePerson: '1조 1,517억', onePersonDps: '5.97억/초' 
+      },
+      { 
+        category: '종막 익스 나메', gate: '2-1 (1)', 
+        gangtoo: '1조 5,174억', gangtooDps: '15.17억/초', 
+        janhyul: '2조 232억', janhyulDps: '20.23억/초', 
+        onePerson: '1조 6,860억', onePersonDps: '16.86억/초' 
+      },
+      { 
+        category: '종막 익스 나메', gate: '2-1 (2)', 
+        gangtoo: '2조 8,102억', gangtooDps: '14.56억/초', 
+        janhyul: '3조 7,469억', janhyulDps: '19.41억/초', 
+        onePerson: '3조 1,224억', onePersonDps: '16.18억/초' 
+      },
+      { 
+        category: '종막 일반 노말', gate: '1관문', 
+        gangtoo: '1,186억', gangtooDps: '1.1억/초', 
+        janhyul: '1,581억', janhyulDps: '1.46억/초', 
+        onePerson: '1,318억', onePersonDps: '1.22억/초' 
+      },
+      { 
+        category: '종막 일반 노말', gate: '2관문', 
+        gangtoo: '1,074억', gangtooDps: '1.12억/초', 
+        janhyul: '1,433억', janhyulDps: '1.49억/초', 
+        onePerson: '1,194억', onePersonDps: '1.24억/초' 
+      },
+      { 
+        category: '종막 일반 하드', gate: '1관문', 
+        gangtoo: '2,015억', gangtooDps: '1.87억/초', 
+        janhyul: '2,687억', janhyulDps: '2.49억/초', 
+        onePerson: '2,239억', onePersonDps: '2.07억/초' 
+      },
+      { 
+        category: '종막 일반 하드', gate: '2관문', 
+        gangtoo: '3,477억', gangtooDps: '2.13억/초', 
+        janhyul: '4,637억', janhyulDps: '2.84억/초', 
+        onePerson: '3,864억', onePersonDps: '2.37억/초' 
+      }
     ]
   },
   '벨가르딘': {
     title: '벨가르딘 레이드',
     rows: [
-      { category: '노말', gate: '1관문', gangtoo: '2,609억', janhyul: '3,479억', onePerson: '2,899억' },
-      { category: '노말', gate: '2관문', gangtoo: '2,926억', janhyul: '3,901억', onePerson: '3,251억' },
-      { category: '하드', gate: '1관문', gangtoo: '4,153억', janhyul: '5,537억', onePerson: '4,614억' },
-      { category: '하드', gate: '2관문', gangtoo: '4,701억', janhyul: '6,268억', onePerson: '5,223억' },
-      { category: '나이트메어', gate: '1관문', gangtoo: '7,427억', janhyul: '9,903억', onePerson: '8,253억' },
-      { category: '나이트메어', gate: '2관문', gangtoo: '8,408억', janhyul: '1조 1,210억', onePerson: '9,342억' }
+      { 
+        category: '노말', gate: '1관문', 
+        gangtoo: '2,609억', gangtooDps: '4.35억/초', 
+        janhyul: '3,479억', janhyulDps: '5.8억/초', 
+        onePerson: '2,899억', onePersonDps: '4.83억/초' 
+      },
+      { 
+        category: '노말', gate: '2관문', 
+        gangtoo: '2,926억', gangtooDps: '3.75억/초', 
+        janhyul: '3,901억', janhyulDps: '5억/초', 
+        onePerson: '3,251억', onePersonDps: '4.17억/초' 
+      },
+      { 
+        category: '하드', gate: '1관문', 
+        gangtoo: '4,153억', gangtooDps: '6.92억/초', 
+        janhyul: '5,537억', janhyulDps: '9.23억/초', 
+        onePerson: '4,614억', onePersonDps: '7.69억/초' 
+      },
+      { 
+        category: '하드', gate: '2관문', 
+        gangtoo: '4,701억', gangtooDps: '6.03억/초', 
+        janhyul: '6,268억', janhyulDps: '8.04억/초', 
+        onePerson: '5,223억', onePersonDps: '6.7억/초' 
+      },
+      { 
+        category: '나이트메어', gate: '1관문', 
+        gangtoo: '7,427억', gangtooDps: '12.38억/초', 
+        janhyul: '9,903억', janhyulDps: '16.51억/초', 
+        onePerson: '8,253억', onePersonDps: '13.75억/초' 
+      },
+      { 
+        category: '나이트메어', gate: '2관문', 
+        gangtoo: '8,408억', gangtooDps: '10.78억/초', 
+        janhyul: '1조 1,210억', janhyulDps: '14.37억/초', 
+        onePerson: '9,342억', onePersonDps: '11.98억/초' 
+      }
     ]
   },
   '세르카': {
     title: '세르카 레이드',
     rows: [
-      { category: '노말', gate: '1관문', gangtoo: '1,110억', janhyul: '1,480억', onePerson: '1,233억' },
-      { category: '노말', gate: '2관문', gangtoo: '1,430억', janhyul: '1,907억', onePerson: '1,589억' },
-      { category: '하드', gate: '1관문', gangtoo: '2,309억', janhyul: '3,078억', onePerson: '2,565억' },
-      { category: '하드', gate: '2관문', gangtoo: '2,976억', janhyul: '3,968억', onePerson: '3,307억' },
-      { category: '나이트메어', gate: '1관문', gangtoo: '3,582억', janhyul: '4,777억', onePerson: '3,980억' },
-      { category: '나이트메어', gate: '2관문', gangtoo: '4,618억', janhyul: '6,157억', onePerson: '5,131억' }
+      { 
+        category: '노말', gate: '1관문', 
+        gangtoo: '1,110억', gangtooDps: '1.85억/초', 
+        janhyul: '1,480억', janhyulDps: '2.47억/초', 
+        onePerson: '1,233억', onePersonDps: '2.06억/초' 
+      },
+      { 
+        category: '노말', gate: '2관문', 
+        gangtoo: '1,430억', gangtooDps: '2.38억/초', 
+        janhyul: '1,907억', janhyulDps: '3.18억/초', 
+        onePerson: '1,589억', onePersonDps: '2.65억/초' 
+      },
+      { 
+        category: '하드', gate: '1관문', 
+        gangtoo: '2,309억', gangtooDps: '3.85억/초', 
+        janhyul: '3,078억', janhyulDps: '5.13억/초', 
+        onePerson: '2,565억', onePersonDps: '4.28억/초' 
+      },
+      { 
+        category: '하드', gate: '2관문', 
+        gangtoo: '2,976억', gangtooDps: '4.96억/초', 
+        janhyul: '3,968억', janhyulDps: '6.61억/초', 
+        onePerson: '3,307억', onePersonDps: '5.51억/초' 
+      },
+      { 
+        category: '나이트메어', gate: '1관문', 
+        gangtoo: '3,582억', gangtooDps: '5.97억/초', 
+        janhyul: '4,777억', janhyulDps: '7.96억/초', 
+        onePerson: '3,980억', onePersonDps: '6.63억/초' 
+      },
+      { 
+        category: '나이트메어', gate: '2관문', 
+        gangtoo: '4,618억', gangtooDps: '7.7억/초', 
+        janhyul: '6,157억', janhyulDps: '10.26억/초', 
+        onePerson: '5,131억', onePersonDps: '8.55억/초' 
+      }
     ]
   },
   '성당': {
     title: '지평의 성당 레이드',
     rows: [
-      { category: '1단계', gate: '1관문', gangtoo: '994억', janhyul: '1,326억', onePerson: '1,105억' },
-      { category: '1단계', gate: '2관문', gangtoo: '937억', janhyul: '1,250억', onePerson: '1,042억' },
-      { category: '2단계', gate: '1관문', gangtoo: '2,161억', janhyul: '2,882억', onePerson: '2,401억' },
-      { category: '2단계', gate: '2관문', gangtoo: '2,089억', janhyul: '2,786억', onePerson: '2,322억' },
-      { category: '3단계', gate: '1관문', gangtoo: '3,649억', janhyul: '4,866억', onePerson: '4,055억' },
-      { category: '3단계', gate: '2관문', gangtoo: '3,594억', janhyul: '4,792억', onePerson: '3,993억' }
+      { 
+        category: '1단계', gate: '1관문', 
+        gangtoo: '994억', gangtooDps: '1.66억/초', 
+        janhyul: '1,326억', janhyulDps: '2.21억/초', 
+        onePerson: '1,105억', onePersonDps: '1.84억/초' 
+      },
+      { 
+        category: '1단계', gate: '2관문', 
+        gangtoo: '937억', gangtooDps: '1.56억/초', 
+        janhyul: '1,250억', janhyulDps: '2.08억/초', 
+        onePerson: '1,042억', onePersonDps: '1.74억/초' 
+      },
+      { 
+        category: '2단계', gate: '1관문', 
+        gangtoo: '2,161억', gangtooDps: '3.6억/초', 
+        janhyul: '2,882억', janhyulDps: '4.8억/초', 
+        onePerson: '2,401억', onePersonDps: '4억/초' 
+      },
+      { 
+        category: '2단계', gate: '2관문', 
+        gangtoo: '2,089억', gangtooDps: '3.48억/초', 
+        janhyul: '2,786억', janhyulDps: '4.64억/초', 
+        onePerson: '2,322억', onePersonDps: '3.87억/초' 
+      },
+      { 
+        category: '3단계', gate: '1관문', 
+        gangtoo: '3,649억', gangtooDps: '6.08억/초', 
+        janhyul: '4,866억', janhyulDps: '8.11억/초', 
+        onePerson: '4,055억', onePersonDps: '6.76억/초' 
+      },
+      { 
+        category: '3단계', gate: '2관문', 
+        gangtoo: '3,594억', gangtooDps: '5.99억/초', 
+        janhyul: '4,792억', janhyulDps: '7.99억/초', 
+        onePerson: '3,993억', onePersonDps: '6.66억/초' 
+      }
     ]
   },
   '4막': {
     title: '4막 레이드',
     rows: [
-      { category: '노말', gate: '1관문', gangtoo: '737억', janhyul: '982억', onePerson: '819억' },
-      { category: '노말', gate: '2관문', gangtoo: '940억', janhyul: '1,254억', onePerson: '1,045억' },
-      { category: '하드', gate: '1관문', gangtoo: '1,423억', janhyul: '1,898억', onePerson: '1,582억' },
-      { category: '하드', gate: '2관문', gangtoo: '1,577억', janhyul: '2,103억', onePerson: '1,753억' }
+      { 
+        category: '노말', gate: '1관문', 
+        gangtoo: '737억', gangtooDps: '-', 
+        janhyul: '982억', janhyulDps: '-', 
+        onePerson: '819억', onePersonDps: '-' 
+      },
+      { 
+        category: '노말', gate: '2관문', 
+        gangtoo: '940억', gangtooDps: '1.04억/초', 
+        janhyul: '1,254억', janhyulDps: '1.39억/초', 
+        onePerson: '1,045억', onePersonDps: '1.16억/초' 
+      },
+      { 
+        category: '하드', gate: '1관문', 
+        gangtoo: '1,423억', gangtooDps: '-', 
+        janhyul: '1,898억', janhyulDps: '-', 
+        onePerson: '1,582억', onePersonDps: '-' 
+      },
+      { 
+        category: '하드', gate: '2관문', 
+        gangtoo: '1,577억', gangtooDps: '1.75억/초', 
+        janhyul: '2,103억', janhyulDps: '2.34억/초', 
+        onePerson: '1,753억', onePersonDps: '1.95억/초' 
+      }
     ]
   }
 };
+
 
 // 유저 메시지 세션 저장소
 const userSessions = {};
@@ -279,6 +440,7 @@ client.on('messageCreate', async message => {
                 { name: '🔍 정보', value: '`!정보 [닉네임]`\n> 로스트아크 캐릭터 정보를 불러옵니다.' },
                 { name: '🎟️ 제비뽑기', value: '`!제비뽑기 [총 개수] [당첨 개수]`\n> 랜덤으로 제비뽑기를 진행합니다.' },
                 { name: '💰 골드', value: '`!골드 [본캐닉네임]`\n> 6캐릭 총 골드를 계산합니다.' }
+                { name: '⚔️ 딜컷', value: '`!딜컷 [레이드 이름]`\n> 각 레이드별 딜량을 확인합니다.\n> *예시: `!딜컷 레이드이름`*' }
             )
             .setFooter({ text: 'Loabot Powered by Render & Discord.js' })
             .setTimestamp();
