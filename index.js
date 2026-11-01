@@ -80,222 +80,61 @@ const RAID_DMG_CUT_DATABASE = {
   '종막': {
     title: '종막 레이드 (익스트림 및 일반)',
     rows: [
-      { 
-        category: '종막 익스 노말', gate: '2-1', 
-        gangtoo: '2,064억', gangtooDps: '2.06억/초', 
-        janhyul: '2,751억', janhyulDps: '2.75억/초', 
-        onePerson: '2,293억', onePersonDps: '2.29억/초' 
-      },
-      { 
-        category: '종막 익스 노말', gate: '2-3까지', 
-        gangtoo: '4,118억', gangtooDps: '2.13억/초', 
-        janhyul: '5,191억', janhyulDps: '2.84억/초', 
-        onePerson: '45,776억', onePersonDps: '2.37억/초' 
-      },
-      { 
-        category: '종막 익스 하드', gate: '2-1', 
-        gangtoo: '5,417억', gangtooDps: '5.42억/초', 
-        janhyul: '7,223억', janhyulDps: '7.22억/초', 
-        onePerson: '6,019억', onePersonDps: '6.02억/초' 
-      },
-      { 
-        category: '종막 익스 하드', gate: '2-3까지', 
-        gangtoo: '1조 365억', gangtooDps: '5.37억/초', 
-        janhyul: '1조 3,821억', janhyulDps: '7.16억/초', 
-        onePerson: '1조 1,517억', onePersonDps: '5.97억/초' 
-      },
-      { 
-        category: '종막 익스 나메', gate: '2-1 (1)', 
-        gangtoo: '1조 5,174억', gangtooDps: '15.17억/초', 
-        janhyul: '2조 232억', janhyulDps: '20.23억/초', 
-        onePerson: '1조 6,860억', onePersonDps: '16.86억/초' 
-      },
-      { 
-        category: '종막 익스 나메', gate: '2-1 (2)', 
-        gangtoo: '2조 8,102억', gangtooDps: '14.56억/초', 
-        janhyul: '3조 7,469억', janhyulDps: '19.41억/초', 
-        onePerson: '3조 1,224억', onePersonDps: '16.18억/초' 
-      },
-      { 
-        category: '종막 일반 노말', gate: '1관문', 
-        gangtoo: '1,186억', gangtooDps: '1.1억/초', 
-        janhyul: '1,581억', janhyulDps: '1.46억/초', 
-        onePerson: '1,318억', onePersonDps: '1.22억/초' 
-      },
-      { 
-        category: '종막 일반 노말', gate: '2관문', 
-        gangtoo: '1,074억', gangtooDps: '1.12억/초', 
-        janhyul: '1,433억', janhyulDps: '1.49억/초', 
-        onePerson: '1,194억', onePersonDps: '1.24억/초' 
-      },
-      { 
-        category: '종막 일반 하드', gate: '1관문', 
-        gangtoo: '2,015억', gangtooDps: '1.87억/초', 
-        janhyul: '2,687억', janhyulDps: '2.49억/초', 
-        onePerson: '2,239억', onePersonDps: '2.07억/초' 
-      },
-      { 
-        category: '종막 일반 하드', gate: '2관문', 
-        gangtoo: '3,477억', gangtooDps: '2.13억/초', 
-        janhyul: '4,637억', janhyulDps: '2.84억/초', 
-        onePerson: '3,864억', onePersonDps: '2.37억/초' 
-      }
+      { category: '종막 익스 노말', gate: '2-1', gangtoo: '2,064억', gangtooDps: '2.06억/초', janhyul: '2,751억', janhyulDps: '2.75억/초', onePerson: '2,293억', onePersonDps: '2.29억/초' },
+      { category: '종막 익스 노말', gate: '2-3까지', gangtoo: '4,118억', gangtooDps: '2.13억/초', janhyul: '5,191억', janhyulDps: '2.84억/초', onePerson: '45,776억', onePersonDps: '2.37억/초' },
+      { category: '종막 익스 하드', gate: '2-1', gangtoo: '5,417억', gangtooDps: '5.42억/초', janhyul: '7,223억', janhyulDps: '7.22억/초', onePerson: '6,019억', onePersonDps: '6.02억/초' },
+      { category: '종막 익스 하드', gate: '2-3까지', gangtoo: '1조 365억', gangtooDps: '5.37억/초', janhyul: '1조 3,821억', janhyulDps: '7.16억/초', onePerson: '1조 1,517억', onePersonDps: '5.97억/초' },
+      { category: '종막 익스 나메', gate: '2-1 (1)', gangtoo: '1조 5,174억', gangtooDps: '15.17억/초', janhyul: '2조 232억', janhyulDps: '20.23억/초', onePerson: '1조 6,860억', onePersonDps: '16.86억/초' },
+      { category: '종막 익스 나메', gate: '2-1 (2)', gangtoo: '2조 8,102억', gangtooDps: '14.56억/초', janhyul: '3조 7,469억', janhyulDps: '19.41억/초', onePerson: '3조 1,224억', onePersonDps: '16.18억/초' },
+      { category: '종막 일반 노말', gate: '1관문', gangtoo: '1,186억', gangtooDps: '1.1억/초', janhyul: '1,581억', janhyulDps: '1.46억/초', onePerson: '1,318억', onePersonDps: '1.22억/초' },
+      { category: '종막 일반 노말', gate: '2관문', gangtoo: '1,074억', gangtooDps: '1.12억/초', janhyul: '1,433억', janhyulDps: '1.49억/초', onePerson: '1,194억', onePersonDps: '1.24억/초' },
+      { category: '종막 일반 하드', gate: '1관문', gangtoo: '2,015억', gangtooDps: '1.87억/초', janhyul: '2,687억', janhyulDps: '2.49억/초', onePerson: '2,239억', onePersonDps: '2.07억/초' },
+      { category: '종막 일반 하드', gate: '2관문', gangtoo: '3,477억', gangtooDps: '2.13억/초', janhyul: '4,637억', janhyulDps: '2.84억/초', onePerson: '3,864억', onePersonDps: '2.37억/초' }
     ]
   },
   '벨가르딘': {
     title: '벨가르딘 레이드',
     rows: [
-      { 
-        category: '노말', gate: '1관문', 
-        gangtoo: '2,609억', gangtooDps: '4.35억/초', 
-        janhyul: '3,479억', janhyulDps: '5.8억/초', 
-        onePerson: '2,899억', onePersonDps: '4.83억/초' 
-      },
-      { 
-        category: '노말', gate: '2관문', 
-        gangtoo: '2,926억', gangtooDps: '3.75억/초', 
-        janhyul: '3,901억', janhyulDps: '5억/초', 
-        onePerson: '3,251억', onePersonDps: '4.17억/초' 
-      },
-      { 
-        category: '하드', gate: '1관문', 
-        gangtoo: '4,153억', gangtooDps: '6.92억/초', 
-        janhyul: '5,537억', janhyulDps: '9.23억/초', 
-        onePerson: '4,614억', onePersonDps: '7.69억/초' 
-      },
-      { 
-        category: '하드', gate: '2관문', 
-        gangtoo: '4,701억', gangtooDps: '6.03억/초', 
-        janhyul: '6,268억', janhyulDps: '8.04억/초', 
-        onePerson: '5,223억', onePersonDps: '6.7억/초' 
-      },
-      { 
-        category: '나이트메어', gate: '1관문', 
-        gangtoo: '7,427억', gangtooDps: '12.38억/초', 
-        janhyul: '9,903억', janhyulDps: '16.51억/초', 
-        onePerson: '8,253억', onePersonDps: '13.75억/초' 
-      },
-      { 
-        category: '나이트메어', gate: '2관문', 
-        gangtoo: '8,408억', gangtooDps: '10.78억/초', 
-        janhyul: '1조 1,210억', janhyulDps: '14.37억/초', 
-        onePerson: '9,342억', onePersonDps: '11.98억/초' 
-      }
+      { category: '노말', gate: '1관문', gangtoo: '2,609억', gangtooDps: '4.35억/초', janhyul: '3,479억', janhyulDps: '5.8억/초', onePerson: '2,899억', onePersonDps: '4.83억/초' },
+      { category: '노말', gate: '2관문', gangtoo: '2,926억', gangtooDps: '3.75억/초', janhyul: '3,901억', janhyulDps: '5억/초', onePerson: '3,251억', onePersonDps: '4.17억/초' },
+      { category: '하드', gate: '1관문', gangtoo: '4,153억', gangtooDps: '6.92억/초', janhyul: '5,537억', janhyulDps: '9.23억/초', onePerson: '4,614억', onePersonDps: '7.69억/초' },
+      { category: '하드', gate: '2관문', gangtoo: '4,701억', gangtooDps: '6.03억/초', janhyul: '6,268억', janhyulDps: '8.04억/초', onePerson: '5,223억', onePersonDps: '6.7억/초' },
+      { category: '나이트메어', gate: '1관문', gangtoo: '7,427억', gangtooDps: '12.38억/초', janhyul: '9,903억', janhyulDps: '16.51억/초', onePerson: '8,253억', onePersonDps: '13.75억/초' },
+      { category: '나이트메어', gate: '2관문', gangtoo: '8,408억', gangtooDps: '10.78억/초', janhyul: '1조 1,210억', janhyulDps: '14.37억/초', onePerson: '9,342억', onePersonDps: '11.98억/초' }
     ]
   },
   '세르카': {
     title: '세르카 레이드',
     rows: [
-      { 
-        category: '노말', gate: '1관문', 
-        gangtoo: '1,110억', gangtooDps: '1.85억/초', 
-        janhyul: '1,480억', janhyulDps: '2.47억/초', 
-        onePerson: '1,233억', onePersonDps: '2.06억/초' 
-      },
-      { 
-        category: '노말', gate: '2관문', 
-        gangtoo: '1,430억', gangtooDps: '2.38억/초', 
-        janhyul: '1,907억', janhyulDps: '3.18억/초', 
-        onePerson: '1,589억', onePersonDps: '2.65억/초' 
-      },
-      { 
-        category: '하드', gate: '1관문', 
-        gangtoo: '2,309억', gangtooDps: '3.85억/초', 
-        janhyul: '3,078억', janhyulDps: '5.13억/초', 
-        onePerson: '2,565억', onePersonDps: '4.28억/초' 
-      },
-      { 
-        category: '하드', gate: '2관문', 
-        gangtoo: '2,976억', gangtooDps: '4.96억/초', 
-        janhyul: '3,968억', janhyulDps: '6.61억/초', 
-        onePerson: '3,307억', onePersonDps: '5.51억/초' 
-      },
-      { 
-        category: '나이트메어', gate: '1관문', 
-        gangtoo: '3,582억', gangtooDps: '5.97억/초', 
-        janhyul: '4,777억', janhyulDps: '7.96억/초', 
-        onePerson: '3,980억', onePersonDps: '6.63억/초' 
-      },
-      { 
-        category: '나이트메어', gate: '2관문', 
-        gangtoo: '4,618억', gangtooDps: '7.7억/초', 
-        janhyul: '6,157억', janhyulDps: '10.26억/초', 
-        onePerson: '5,131억', onePersonDps: '8.55억/초' 
-      }
+      { category: '노말', gate: '1관문', gangtoo: '1,110억', gangtooDps: '1.85억/초', janhyul: '1,480억', janhyulDps: '2.47억/초', onePerson: '1,233억', onePersonDps: '2.06억/초' },
+      { category: '노말', gate: '2관문', gangtoo: '1,430억', gangtooDps: '2.38억/초', janhyul: '1,907억', janhyulDps: '3.18억/초', onePerson: '1,589억', onePersonDps: '2.65억/초' },
+      { category: '하드', gate: '1관문', gangtoo: '2,309억', gangtooDps: '3.85억/초', janhyul: '3,078억', janhyulDps: '5.13억/초', onePerson: '2,565억', onePersonDps: '4.28억/초' },
+      { category: '하드', gate: '2관문', gangtoo: '2,976억', gangtooDps: '4.96억/초', janhyul: '3,968억', janhyulDps: '6.61억/초', onePerson: '3,307억', onePersonDps: '5.51억/초' },
+      { category: '나이트메어', gate: '1관문', gangtoo: '3,582억', gangtooDps: '5.97억/초', janhyul: '4,777억', janhyulDps: '7.96억/초', onePerson: '3,980억', onePersonDps: '6.63억/초' },
+      { category: '나이트메어', gate: '2관문', gangtoo: '4,618억', gangtooDps: '7.7억/초', janhyul: '6,157억', janhyulDps: '10.26억/초', onePerson: '5,131억', onePersonDps: '8.55억/초' }
     ]
   },
   '성당': {
     title: '지평의 성당 레이드',
     rows: [
-      { 
-        category: '1단계', gate: '1관문', 
-        gangtoo: '994억', gangtooDps: '1.66억/초', 
-        janhyul: '1,326억', janhyulDps: '2.21억/초', 
-        onePerson: '1,105억', onePersonDps: '1.84억/초' 
-      },
-      { 
-        category: '1단계', gate: '2관문', 
-        gangtoo: '937억', gangtooDps: '1.56억/초', 
-        janhyul: '1,250억', janhyulDps: '2.08억/초', 
-        onePerson: '1,042억', onePersonDps: '1.74억/초' 
-      },
-      { 
-        category: '2단계', gate: '1관문', 
-        gangtoo: '2,161억', gangtooDps: '3.6억/초', 
-        janhyul: '2,882억', janhyulDps: '4.8억/초', 
-        onePerson: '2,401억', onePersonDps: '4억/초' 
-      },
-      { 
-        category: '2단계', gate: '2관문', 
-        gangtoo: '2,089억', gangtooDps: '3.48억/초', 
-        janhyul: '2,786억', janhyulDps: '4.64억/초', 
-        onePerson: '2,322억', onePersonDps: '3.87억/초' 
-      },
-      { 
-        category: '3단계', gate: '1관문', 
-        gangtoo: '3,649억', gangtooDps: '6.08억/초', 
-        janhyul: '4,866억', janhyulDps: '8.11억/초', 
-        onePerson: '4,055억', onePersonDps: '6.76억/초' 
-      },
-      { 
-        category: '3단계', gate: '2관문', 
-        gangtoo: '3,594억', gangtooDps: '5.99억/초', 
-        janhyul: '4,792억', janhyulDps: '7.99억/초', 
-        onePerson: '3,993억', onePersonDps: '6.66억/초' 
-      }
+      { category: '1단계', gate: '1관문', gangtoo: '994억', gangtooDps: '1.66억/초', janhyul: '1,326억', janhyulDps: '2.21억/초', onePerson: '1,105억', onePersonDps: '1.84억/초' },
+      { category: '1단계', gate: '2관문', gangtoo: '937억', gangtooDps: '1.56억/초', janhyul: '1,250억', janhyulDps: '2.08억/초', onePerson: '1,042억', onePersonDps: '1.74억/초' },
+      { category: '2단계', gate: '1관문', gangtoo: '2,161억', gangtooDps: '3.6억/초', janhyul: '2,882억', janhyulDps: '4.8억/초', onePerson: '2,401억', onePersonDps: '4억/초' },
+      { category: '2단계', gate: '2관문', gangtoo: '2,089억', gangtooDps: '3.48억/초', janhyul: '2,786억', janhyulDps: '4.64억/초', onePerson: '2,322억', onePersonDps: '3.87억/초' },
+      { category: '3단계', gate: '1관문', gangtoo: '3,649억', gangtooDps: '6.08억/초', janhyul: '4,866억', janhyulDps: '8.11억/초', onePerson: '4,055억', onePersonDps: '6.76억/초' },
+      { category: '3단계', gate: '2관문', gangtoo: '3,594억', gangtooDps: '5.99억/초', janhyul: '4,792억', janhyulDps: '7.99억/초', onePerson: '3,993억', onePersonDps: '6.66억/초' }
     ]
   },
   '4막': {
     title: '4막 레이드',
     rows: [
-      { 
-        category: '노말', gate: '1관문', 
-        gangtoo: '737억', gangtooDps: '-', 
-        janhyul: '982억', janhyulDps: '-', 
-        onePerson: '819억', onePersonDps: '-' 
-      },
-      { 
-        category: '노말', gate: '2관문', 
-        gangtoo: '940억', gangtooDps: '1.04억/초', 
-        janhyul: '1,254억', janhyulDps: '1.39억/초', 
-        onePerson: '1,045억', onePersonDps: '1.16억/초' 
-      },
-      { 
-        category: '하드', gate: '1관문', 
-        gangtoo: '1,423억', gangtooDps: '-', 
-        janhyul: '1,898억', janhyulDps: '-', 
-        onePerson: '1,582억', onePersonDps: '-' 
-      },
-      { 
-        category: '하드', gate: '2관문', 
-        gangtoo: '1,577억', gangtooDps: '1.75억/초', 
-        janhyul: '2,103억', janhyulDps: '2.34억/초', 
-        onePerson: '1,753억', onePersonDps: '1.95억/초' 
-      }
+      { category: '노말', gate: '1관문', gangtoo: '737억', gangtooDps: '-', janhyul: '982억', janhyulDps: '-', onePerson: '819억', onePersonDps: '-' },
+      { category: '노말', gate: '2관문', gangtoo: '940억', gangtooDps: '1.04억/초', janhyul: '1,254억', janhyulDps: '1.39억/초', onePerson: '1,045억', onePersonDps: '1.16억/초' },
+      { category: '하드', gate: '1관문', gangtoo: '1,423억', gangtooDps: '-', janhyul: '1,898억', janhyulDps: '-', onePerson: '1,582억', onePersonDps: '-' },
+      { category: '하드', gate: '2관문', gangtoo: '1,577억', gangtooDps: '1.75억/초', janhyul: '2,103억', janhyulDps: '2.34억/초', onePerson: '1,753억', onePersonDps: '1.95억/초' }
     ]
   }
 };
-
 
 // 유저 메시지 세션 저장소
 const userSessions = {};
@@ -355,7 +194,7 @@ function buildDashboardUI(session) {
 
   reportText += `--------------------------------------------------\n`;
   reportText += `💰 거래 가능 골드 총합 : ${totalTradableGold.toLocaleString()} G\n`;
-  reportText += `🔒 귀속 골드 총합     : ${totalBoundGold.toLocaleString()} G\n`;
+  reportText += `🔒 귀속 골드 총합      : ${totalBoundGold.toLocaleString()} G\n`;
   reportText += `✨ 원정대 주간 최종 총합 : ${grandTotal.toLocaleString()} 골드\n`;
   reportText += `\`\`\``;
 
@@ -420,39 +259,36 @@ function buildDashboardUI(session) {
 client.on('messageCreate', async message => {
   if (message.author.bot) return;
 
-    const prefix = '!';
-    if (!message.content.startsWith(prefix)) return;
+  const prefix = '!';
+  if (!message.content.startsWith(prefix)) return;
 
-    const args = message.content.slice(prefix.length).trim().split(/ +/);
-    const command = args.shift().toLowerCase();
+  const args = message.content.slice(prefix.length).trim().split(/ +/);
+  const command = args.shift().toLowerCase();
 
-    // 1️⃣ 아까 드린 '도움말' 명령어 코드를 이 자리에 통째로 넣기
-    if (command === '도움말' || command === 'help') {
-        const helpEmbed = new EmbedBuilder()
-            .setColor('#0099ff')
-            .setTitle('🤖 로아봇(Loabot) 명령어 안내')
-            .setDescription('디스코드 서버에서 사용할 수 있는 전체 명령어 목록과 사용법입니다.')
-            .addFields(
-                { name: '🤖 기본', value: '`!도움말` (또는 `!help`) - 명령어 목록을 보여줍니다.' },
-                { name: '🏃‍♂️ 경주', value: '`!경주 [이름1] [이름2] ...`\n> 재밌는 달리기 경주를 진행합니다.' },
-                { name: '🍽️ 메뉴', value: '`!메뉴`\n> 오늘 식사 메뉴를 무작위로 추천해 줍니다.' },
-                { name: '⚔️ 공대', value: '`!공대 [인원수] [템레벨] [닉네임들...]`\n> 공대 조합을 짜줍니다. (인원수: 4 또는 8)' },
-                { name: '🔍 정보', value: '`!정보 [닉네임]`\n> 로스트아크 캐릭터 정보를 불러옵니다.' },
-                { name: '🎟️ 제비뽑기', value: '`!제비뽑기 [총 개수] [당첨 개수]`\n> 랜덤으로 제비뽑기를 진행합니다.' },
-                { name: '💰 골드', value: '`!골드 [본캐닉네임]`\n> 6캐릭 총 골드를 계산합니다.' }
-                { name: '⚔️ 딜컷', value: '`!딜컷 [레이드 이름]`\n> 각 레이드별 딜량을 확인합니다.\n> *예시: `!딜컷 레이드이름`*' }
-            )
-            .setFooter({ text: 'Loabot Powered by Render & Discord.js' })
-            .setTimestamp();
+  // 📌 도움말 (!도움말 또는 !help) 명령어 (쉼표 수정 완료)
+  if (command === '도움말' || command === 'help') {
+    const helpEmbed = new EmbedBuilder()
+      .setColor('#0099ff')
+      .setTitle('🤖 로아봇(Loabot) 명령어 안내')
+      .setDescription('디스코드 서버에서 사용할 수 있는 전체 명령어 목록과 사용법입니다.')
+      .addFields(
+        { name: '🤖 기본', value: '`!도움말` (또는 `!help`) - 명령어 목록을 보여줍니다.' },
+        { name: '🏃‍♂️ 경주', value: '`!경주 [이름1] [이름2] ...`\n> 재밌는 달리기 경주를 진행합니다.' },
+        { name: '🍽️ 메뉴', value: '`!메뉴`\n> 오늘 식사 메뉴를 무작위로 추천해 줍니다.' },
+        { name: '⚔️ 공대', value: '`!공대 [인원수] [템레벨] [닉네임들...]`\n> 공대 조합을 짜줍니다. (인원수: 4 또는 8)' },
+        { name: '🔍 정보', value: '`!정보 [닉네임]`\n> 로스트아크 캐릭터 정보를 불러옵니다.' },
+        { name: '🎟️ 제비뽑기', value: '`!제비뽑기 [총 개수] [당첨 개수]`\n> 랜덤으로 제비뽑기를 진행합니다.' },
+        { name: '💰 골드', value: '`!골드 [본캐닉네임]`\n> 6캐릭 총 골드를 계산합니다.' },
+        { name: '⚔️ 딜컷', value: '`!딜컷 [레이드 이름]`\n> 각 레이드별 딜량을 확인합니다.\n> *예시: `!딜컷 종막`*'
+      )
+      .setFooter({ text: 'Loabot Powered by Render & Discord.js' })
+      .setTimestamp();
 
-        message.reply({ embeds: [helpEmbed] });
-    }
-
-
+    return message.reply({ embeds: [helpEmbed] });
+  }
 
   // 1. 자동차 경주 기능 (!경주)
-  if (message.content.startsWith('!경주')) {
-    const args = message.content.split(' ').slice(1);
+  if (command === '경주') {
     const racerNames = args.length > 0 ? args : ['1', '2', '3', '4'];
     const racers = racerNames.map(name => ({ name, pos: 0, emoji: '<:run:1566043396769054740>' }));
     const goal = 40;
@@ -485,15 +321,14 @@ client.on('messageCreate', async message => {
   }
 
   // 2. 식사 메뉴 추천 기능 (!메뉴)
-  if (message.content === '!메뉴' || message.content.startsWith('!메뉴추천')) {
+  if (command === '메뉴' || command === '메뉴추천') {
     const menus = ['김치찌개', '된장찌개', '부대찌개', '제육볶음', '삼겹살', '짜장면', '짬뽕', '마라탕', '초밥', '파스타', '치킨'];
     const randomMenu = menus[Math.floor(Math.random() * menus.length)];
     await message.channel.send(`🍽️ 오늘의 추천 식사 메뉴는 **${randomMenu}**입니다! 😋`);
   }
 
   // 3. 공대 조합기 (!공대)
-  if (message.content.startsWith('!공대')) {
-    const args = message.content.split(' ').slice(1);
+  if (command === '공대') {
     const partySize = parseInt(args[0]);
     const targetItemLevel = parseFloat(args[1]);
     const characterNames = args.slice(2);
@@ -585,9 +420,8 @@ client.on('messageCreate', async message => {
     }
   }
 
-  // 4. 캐릭터 정보 상세 조회 (!정보)
-  if (message.content.startsWith('!정보') || message.content.startsWith('!캐릭터')) {
-    const args = message.content.split(' ').slice(1);
+  // 4. 캐릭터 정보 상세 조회 (!정보 또는 !캐릭터)
+  if (command === '정보' || command === '캐릭터') {
     const characterName = args[0];
     if (!characterName) return message.channel.send('⚠️ 조회할 캐릭터 이름을 입력해 주세요!');
 
@@ -645,8 +479,7 @@ client.on('messageCreate', async message => {
   }
 
   // 5. 제비뽑기 (!제비뽑기)
-  if (message.content.startsWith('!제비뽑기')) {
-    const args = message.content.split(' ').slice(1);
+  if (command === '제비뽑기') {
     const totalCount = parseInt(args[0]);
     const winCount = parseInt(args[1]);
     if (isNaN(totalCount) || isNaN(winCount) || totalCount <= 0 || winCount < 0) {
@@ -665,9 +498,8 @@ client.on('messageCreate', async message => {
     await message.channel.send(resultText);
   }
 
-  // 딜량 컷 조회 명령어 (!딜컷 [레이드이름])
-  if (message.content.startsWith('!딜컷')) {
-    const args = message.content.split(' ').slice(1);
+  // 딜량 및 DPS 컷 조회 명령어 (!딜컷 [레이드이름])
+  if (command === '딜컷' || command === 'dealcut') {
     const raidName = args[0];
 
     if (!raidName) {
@@ -680,12 +512,12 @@ client.on('messageCreate', async message => {
       return message.channel.send(`❌ **${raidName}**에 대한 딜량 컷 정보가 없습니다. (종류: 종막, 벨가르딘, 세르카, 성당, 4막)`);
     }
 
-    let text = `⚔️ **[${cutData.title}]** 딜량 판정 기준표\n\`\`\`text\n`;
+    let text = `⚔️ **[${cutData.title}]** 딜량 및 DPS 판정 기준표\n\`\`\`text\n`;
     cutData.rows.forEach(r => {
       text += `[${r.category} / ${r.gate}]\n`;
-      text += ` 🔸 강투컷 : ${r.gangtoo}\n`;
-      text += ` 🔸 잔혈컷 : ${r.janhyul}\n`;
-      text += ` 🔸 1인분  : ${r.onePerson}\n`;
+      text += ` 🔸 강투 : ${r.gangtoo} (${r.gangtooDps})\n`;
+      text += ` 🔸 잔혈 : ${r.janhyul} (${r.janhyulDps})\n`;
+      text += ` 🔸 1인분 : ${r.onePerson} (${r.onePersonDps})\n`;
       text += `----------------------------------------\n`;
     });
     text += `\`\`\``;
@@ -693,10 +525,8 @@ client.on('messageCreate', async message => {
     await message.channel.send(text);
   }
 
-  
   // 6. 원정대 골드 대시보드 (!골드 [닉네임])
-  if (message.content.startsWith('!골드')) {
-    const args = message.content.split(' ').slice(1);
+  if (command === '골드') {
     const characterName = args[0];
 
     if (!characterName) {
@@ -797,10 +627,9 @@ client.on(Events.InteractionCreate, async interaction => {
     session.charStates[activeCharName] = currentRaidIds;
   }
 
-
   const updatedUI = buildDashboardUI(session);
   await interaction.update(updatedUI);
 });
 
-// 토큰을 직접 적는 대신 환경 변수나 빈 칸으로 변경
+// 토큰 로그인
 client.login(process.env.DISCORD_TOKEN);
